@@ -1,5 +1,9 @@
 #import <React/RCTBridgeModule.h>
 
-@interface BrotherPrinter : NSObject <RCTBridgeModule>
+#import <BRPtouchPrinterKit/BRPtouchNetworkManager.h>
 
+@interface BrotherPrinter : NSObject <RCTBridgeModule, BRPtouchNetworkDelegate>
+{
+  BRPtouchNetworkManager *_networkManager;
+}
 @end

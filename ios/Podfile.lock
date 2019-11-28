@@ -1,0 +1,21 @@
+PODS:
+  - BRPtouchPrinterKit (3.1.9)
+
+DEPENDENCIES:
+  - BRPtouchPrinterKit (from `https://github.com/envoy/BRPtouchPrinterKit.git`)
+
+EXTERNAL SOURCES:
+  BRPtouchPrinterKit:
+    :git: https://github.com/envoy/BRPtouchPrinterKit.git
+
+CHECKOUT OPTIONS:
+  BRPtouchPrinterKit:
+    :commit: 627c337b5687231ee604a6708eb2b8a37c71fe89
+    :git: https://github.com/envoy/BRPtouchPrinterKit.git
+
+SPEC CHECKSUMS:
+  BRPtouchPrinterKit: 065273e2fb1fefabfbfabaaf043e2951ba4335ac
+
+PODFILE CHECKSUM: c89a930f710c09884c152e42a80aa496d92b2469
+
+COCOAPODS: 1.8.4

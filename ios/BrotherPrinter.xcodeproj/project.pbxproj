@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* BrotherPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* BrotherPrinter.m */; };
+		EEACDEE1C598495FE6055846 /* Pods_BrotherPrinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B12B97F2C632D33248B7AC /* Pods_BrotherPrinter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libBrotherPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBrotherPrinter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE35E859BD509CBD350D801 /* Pods-BrotherPrinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrotherPrinter.debug.xcconfig"; path = "Target Support Files/Pods-BrotherPrinter/Pods-BrotherPrinter.debug.xcconfig"; sourceTree = "<group>"; };
+		853D58DC4EF3C6513F222577 /* Pods-BrotherPrinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrotherPrinter.release.xcconfig"; path = "Target Support Files/Pods-BrotherPrinter/Pods-BrotherPrinter.release.xcconfig"; sourceTree = "<group>"; };
+		92B12B97F2C632D33248B7AC /* Pods_BrotherPrinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrotherPrinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* BrotherPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrotherPrinter.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* BrotherPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrotherPrinter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEACDEE1C598495FE6055846 /* Pods_BrotherPrinter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +58,27 @@
 				B3E7B5881CC2AC0600A0062D /* BrotherPrinter.h */,
 				B3E7B5891CC2AC0600A0062D /* BrotherPrinter.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				816A649460EB53ABF2FBDF9D /* Pods */,
+				9D46DF2B4BAF5C13B709BFC9 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		816A649460EB53ABF2FBDF9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35E859BD509CBD350D801 /* Pods-BrotherPrinter.debug.xcconfig */,
+				853D58DC4EF3C6513F222577 /* Pods-BrotherPrinter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D46DF2B4BAF5C13B709BFC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92B12B97F2C632D33248B7AC /* Pods_BrotherPrinter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +88,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "BrotherPrinter" */;
 			buildPhases = (
+				8D2DBBAFF502B8D20DCEBBB8 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -106,6 +132,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D2DBBAFF502B8D20DCEBBB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrotherPrinter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -214,9 +265,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE35E859BD509CBD350D801 /* Pods-BrotherPrinter.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -230,6 +282,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853D58DC4EF3C6513F222577 /* Pods-BrotherPrinter.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
